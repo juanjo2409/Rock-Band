@@ -3,10 +3,10 @@
 A responsive **Rock Band Landing Page** built with **HTML5, CSS3 and JavaScript**, focused on semantic structure, modern UI design, responsiveness and clean front-end practices.
 
 ## 🔗 Live Demo
-https://juanjo2409.github.io/ProyectoRestaurante.github.io/
+https://juanjo2409.github.io/Rock-Band.git/
 
 ## 📂 Repository
-https://github.com/juanjo2409/ProyectoRestaurante.github.io
+https://github.com/juanjo2409/Rock-Band.git
 
 ---
 
@@ -198,8 +198,7 @@ Used for:
 Clone repository:
 
 ```bash
-git clone https://github.com/juanjo2409/ProyectoRestaurante.github.io.git
-```
+git clone https://github.com/juanjo2409/Rock-Band.git
 
 Open:
 
