@@ -1,0 +1,48 @@
+.menu a{
+font-family:'Oswald',sans-serif;
+font-size:22px;
+font-weight:500;
+letter-spacing:1.5px;
+text-transform:uppercase;
+color:white;
+text-decoration:none;
+transition:.3s;
+position:relative;
+}
+
+
+.menu a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#8B1E1E;
+transition:.3s;
+}
+
+.menu a:hover::after{
+width:100%;
+}
+
+.menu a:hover{
+color:#d4a95a;
+}
+
+
+
+@media(max-width:1024px){
+.menu a{
+font-size:18px;
+letter-spacing:1px;
+}
+}
+
+
+
+@media(max-width:768px){
+.menu a{
+font-size:17px;
+}
+}

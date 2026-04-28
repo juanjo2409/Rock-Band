@@ -11,7 +11,8 @@ flex-wrap:wrap;
 
 .band-image img{
 width:420px;
-border:3px solid #8b2d2d; /* borde rojo como la imagen */
+max-width:100%;
+border:3px solid #8b2d2d;
 display:block;
 }
 
@@ -52,4 +53,56 @@ position:absolute;
 left:0;
 color:#8b2d2d;
 font-size:20px;
+}
+
+
+/* -------- TABLET -------- */
+@media(max-width:1024px){
+
+.about-band{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.band-image img{
+width:360px;
+}
+
+.band-content{
+max-width:700px;
+}
+
+}
+
+
+/* -------- MOBILE -------- */
+@media(max-width:768px){
+
+.about-band{
+padding:60px 8%;
+}
+
+.band-image img{
+width:100%;
+max-width:320px;
+}
+
+.band-content h2{
+font-size:32px;
+}
+
+.band-content p{
+font-size:15px;
+}
+
+.band-content h3{
+font-size:22px;
+}
+
+.band-content ul{
+display:inline-block;
+text-align:left;
+}
+
 }

@@ -1,27 +1,79 @@
+/* oculto en desktop */
 #hamburguesa{
+display:none;
 font-size:40px;
-color:rgb(243, 7, 7);
+color:#f0130c;
 cursor:pointer;
 }
 
+/* menú desktop */
 #menu{
-display:none;
-flex-direction:column;
-position:absolute;
-top:80px;
-right:30px;
-background:#18263b;
-padding:30px;
-border-radius:20px;
-gap:20px;
-}
-
-#menu.activo{
 display:flex;
+flex-direction:row;
+gap:30px;
+position:static;
+background:none;
+padding:0;
+border-radius:0;
 }
 
 #menu a{
 color:white;
 text-decoration:none;
 font-size:20px;
+font-weight:600;
+letter-spacing:1px;
+}
+
+#menu.activo{
+display:flex;
+}
+
+
+
+@media(max-width:1024px){
+
+#menu{
+gap:20px;
+}
+
+#menu a{
+font-size:17px;
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+#hamburguesa{
+display:block;
+font-size:34px;
+}
+
+
+#menu{
+display:none;
+flex-direction:column;
+position:absolute;
+top:80px;
+right:20px;
+background:#18263b;
+padding:30px;
+border-radius:20px;
+gap:20px;
+min-width:220px;
+box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+
+#menu.activo{
+display:flex;
+}
+
+#menu a{
+font-size:18px;
+}
+
 }

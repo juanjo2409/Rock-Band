@@ -6,13 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusión Gourmet Festival</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/hamburguesa.css">
-    <link rel="stylesheet" href="src/css/img_principal.css">
-    <link rel="stylesheet" href="src/css/img-about.css">
-    <link rel="stylesheet" href="src/css/table.css">
 </head>
 
 <body>
@@ -21,20 +16,24 @@
 
         <div class="logo">
 
-            <h1>BANDA</h1>
-            <div class="line"></div>
-            <p>Shattered Riffs</p>
+            <img src="public/icons/logo.ico" alt="Band Logo">
+
+            <div class="logo-text">
+                <h1>ROCK BAND</h1>
+                <p>Shattered Riffs</p>
+            </div>
         </div>
 
         <div id="hamburguesa">
             ☰
         </div>
 
-        <nav id="menu">
-            <a href="#inicio">Inicio</a>
+        <nav class="menu">
+            <a href="#home">home</a>
             <a href="#events">Events</a>
-            <a href="#media">Media</a>
-            <a href="#contact">Contact</a>
+            <a href="#music">Music</a>
+            <a href="#multimedia">Media</a>
+            <a href="#Contact">Contact</a>
         </nav>
 
     </header>
@@ -43,7 +42,7 @@
 
     <main>
 
-        <section class="hero" id="inicio">
+        <section class="hero" id="home">
 
             <img src="public/img/img-11.avif" alt="Band Photo" class="hero-img">
 
@@ -91,7 +90,7 @@
             </table>
         </section>
 
-        <section class="about-band">
+        <section class="about-band" id="about">
 
             <div class="band-image">
                 <img src="public/img/img-10.jpg" alt="Band Photo">
@@ -121,21 +120,21 @@
             <h2>Multimedia</h2>
 
             <div class="gallery">
-                <img src="public/img/img-2.jpg" alt="Band Photo">
-                <img src="public/img/img-3.jpg" alt="Band Photo">
-                <img src="public/img/img-4.jpg" alt="Band Photo">
-                <img src="public/img/img-5.jpg" alt="Band Photo">
-                <img src="public/img/img-5.jpg" alt="Band Photo">
-                <img src="public/img/img-6.jpg" alt="Band Photo">
-                <img src="public/img/img-7.jpg" alt="Band Photo">
-                <img src="public/img/img-8.jpg" alt="Band Photo">
-                <img src="public/img/img-9.jpg" alt="Band Photo">
-                <img src="public/img/img-10.jpg" alt="Band Photo">
+                <img src="public/img/img-2.jpg" alt="Band Photo" loading="lazy">
+                <img src="public/img/img-3.jpg" alt="Band Photo" loading="lazy">
+                <img src="public/img/img-4.jpg" alt="Band Photo" loading="lazy">
+                <img src="public/img/img-5.jpg" alt="Band Photo" loading="lazy">
+                <img src="public/img/img-5.jpg" alt="Band Photo" loading="lazy">
+                <img src="public/img/img-6.jpg" alt="Band Photo" loading="lazy">
+                <img src="public/img/img-7.jpg" alt="Band Photo" loading="lazy">
+                <img src="public/img/img-8.jpg" alt="Band Photo" loading="lazy">
+                <img src="public/img/img-9.jpg" alt="Band Photo" loading="lazy">
+                <img src="public/img/img-10.jpg" alt="Band Photo" loading="lazy">
             </div>
 
             <div class="video-box">
 
-                <iframe width="100%" height="500" src="public/video/videoplayback.mp4" title="Festival gastronómico"
+                <iframe width="100%" height="500" src="public/video/VID-20260427-WA0028.mp4" title="video"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
@@ -148,13 +147,11 @@
 
 
 
-    <footer id="contact">
-
-
+    <footer id="Contact">
 
         <div class="footer-container">
 
-
+            <!-- Logo + redes -->
             <div class="footer-box">
                 <h2 class="footer-logo">SHATTERED RIFFS</h2>
                 <h3 class="footer-social-title">Social Networks</h3>
@@ -167,31 +164,48 @@
             </div>
 
 
-
+            <!-- EVENTS -->
             <div class="footer-box">
-                <h3>Menu</h3>
+                <h3>Events</h3>
 
-                <a href="#home">Home</a>
-                <a href="#events">Events</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-
+                <a href="#">Tour Dates</a>
+                <a href="#">Upcoming</a>
+                <a href="#">Tickets</a>
             </div>
 
 
-
+            <!-- ABOUT -->
             <div class="footer-box">
-                <h3>Contact</h3>
+                <h3>About</h3>
+
+                <a href="#">Biography</a>
+                <a href="#">Reviews / Press</a>
+                <a href="#">Backstage</a>
+            </div>
+
+
+            <!-- MUSIC -->
+            <div class="footer-box">
+                <h3>Music</h3>
+
+                <a href="#">Latest Album</a>
+                <a href="#">Top Tracks</a>
+                <a href="#">Collection</a>
+            </div>
+
+
+            <!-- BAND INFO / CONTACT -->
+            <div class="footer-box">
+                <h3>Band Info</h3>
 
                 <p>📍 15A Street #63B-136<br>
                     Barranquilla, Colombia</p>
 
-                <p>🕒 Mon-Sun: 10AM - 11PM</p>
+                <p>🕒 Mon-Sun: 10AM -11PM</p>
 
                 <p>☎ +57 3022955108</p>
 
                 <p>✉ juanjosemn160@email.com</p>
-
             </div>
 
         </div>

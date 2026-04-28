@@ -1,55 +1,78 @@
 .navbar{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  padding:10px 40px; /* ↓ antes 22px */
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background:rgba(0,0,0,.92);
-  backdrop-filter:blur(8px);
-  z-index:1000;
-  box-shadow:0 4px 20px rgba(0,0,0,.4);
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:10px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.92);
+backdrop-filter:blur(8px);
+z-index:1000;
+box-shadow:0 4px 20px rgba(0,0,0,.4);
 }
 
-.logo h1 {
-  font-family: "Georgia", serif;
-  font-size: 16px; /* ↓ más pequeño */
-  letter-spacing: 2px;
-  margin: 0;
-  color: #8B1E1E
-;
+.logo{
+display:flex;
+align-items:center;
+gap:14px;
 }
 
-.logo p {
-  font-family: "Brush Script MT", cursive;
-  font-size: 16px; /* ↓ antes 28px (esto era clave) */
-  margin: 2px 0;
-  color: #8B1E1E
-;
+.logo img{
+width:42px;
+height:auto;
+filter:drop-shadow(0 0 8px rgba(139,30,30,.6));
+transition:.3s;
 }
 
-.line {
-  width: 140px; /* ↓ más corta */
-  height: 2px;
-  margin: 5px auto; /* ↓ menos espacio */
-  background: #8B1E1E
-;
+.logo img:hover{
+transform:scale(1.08);
 }
 
-/* menú dropdown */
+.logo-text{
+display:flex;
+flex-direction:column;
+}
+
+.logo h1{
+font-family:"Georgia",serif;
+font-size:24px;
+letter-spacing:4px;
+margin:0;
+font-weight:bold;
+color:#8B1E1E;
+text-transform:uppercase;
+text-shadow:0 0 8px rgba(139,30,30,.4);
+}
+
+.line{
+width:135px;
+height:2px;
+margin:6px 0;
+background:linear-gradient(to right,#8B1E1E,#d13a3a);
+}
+
+.logo p{
+font-family:"Brush Script MT",cursive;
+font-size:22px;
+margin:0;
+color:#8B1E1E;
+letter-spacing:1px;
+}
+
+
+/* MENU DESKTOP */
 .menu{
-  position:absolute;
-  top:65px; /* ↓ antes 90px */
-  right:40px;
-  background:#121d2b;
-  padding:20px;
-  border-radius:15px;
-  display:none;
-  flex-direction:column;
-  min-width:200px;
-  box-shadow:0 10px 30px rgba(0,0,0,.5);
+display:flex;
+gap:35px;
+list-style:none;
+position:static;
+background:none;
+padding:0;
+box-shadow:none;
+min-width:auto;
+flex-direction:row;
 }
 
 .menu a{
@@ -61,11 +84,11 @@ transition:.3s;
 }
 
 .menu a::after{
-content:'';
+content:"";
 position:absolute;
 left:0;
 bottom:-6px;
-width:0%;
+width:0;
 height:2px;
 background:#d4a95a;
 transition:.3s;
@@ -76,11 +99,10 @@ width:100%;
 }
 
 .menu a:hover{
-color:#8B1E1E
-;
+color:#8B1E1E;
 }
 
-/* boton */
+/* botón */
 .btn-reserva{
 background:#8B1E1E;
 color:#111 !important;
@@ -92,51 +114,84 @@ border-radius:30px;
 transform:scale(1.05);
 }
 
-/* hamburguesa visible también en PC */
-.hamburguesa{
-font-size:38px;
-cursor:pointer;
-color:white;
-display:block;
-margin-left:30px;
+/* ---------- TABLET ---------- */
+@media(max-width:1024px){
+
+.navbar{
+padding:15px 30px;
 }
 
-/* menú oculto tipo dropdown */
+.logo h1{
+font-size:20px;
+}
+
+.logo p{
+font-size:18px;
+}
+
 .menu{
-position:absolute;
-top:90px;
-right:50px;
-background:#121d2b;
-padding:30px;
-border-radius:20px;
-display:none;
-flex-direction:column;
-min-width:240px;
-box-shadow:0 10px 30px rgba(0,0,0,.5);
+gap:22px;
 }
 
-.menu.activo{
-display:flex;
+.menu a{
+font-size:16px;
 }
 
-/* MOBILE */
+}
+
+
+
 @media(max-width:768px){
 
 .navbar{
-padding:20px 30px;
+padding:18px 25px;
 }
 
-.logo{
-font-size:32px;
+
+.menu{
+display:none;
 }
 
-.hamburguesa{
+
+#hamburguesa{
+display:block;
 font-size:34px;
 }
 
-.menu{
+
+#menu{
+display:none;
+flex-direction:column;
+position:absolute;
+top:80px;
 right:20px;
-width:220px;
+background:#121d2b;
+padding:25px;
+border-radius:18px;
+gap:18px;
+min-width:220px;
+}
+
+#menu.activo{
+display:flex;
+}
+
+
+.logo img{
+width:32px;
+}
+
+.logo h1{
+font-size:18px;
+letter-spacing:2px;
+}
+
+.logo p{
+font-size:16px;
+}
+
+.line{
+width:95px;
 }
 
 }
