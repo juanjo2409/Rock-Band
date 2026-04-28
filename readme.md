@@ -117,14 +117,15 @@ Includes:
 # 📂 Project Structure
 
 ```bash
-ProyectoRestaurante.github.io
+Rock-Band
 │
 ├── index.html
 ├── README.md
 │
 ├── public/
 │   └── img/
-│
+│   └── video/
+│   └── icons/
 └── src/
     ├── css/
     │   ├── header.css
